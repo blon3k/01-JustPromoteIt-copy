@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JustPromote.It | Panel zasobów</title>
+    <link rel="icon" type="image/x-icon" href="./img/JustPromote.it Logo.png">
+
+    <link rel="stylesheet" href="./css/main.css?ver=1.6">
+    <script src="https://kit.fontawesome.com/f0e4f0170e.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16574691903">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16574691903');
+    </script>
+</head>
+
+<body>
+    <div class="preloader-screen" id="preloader-screen">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="nav" class="nav-panel">
+        <div class="nav-logo-panel"><a href="index.html"><img src="./img/Other/JustPromote.it Logo-min.png" alt=""></a>
+        </div>
+        <div class="nav-back-button">
+            <a href="index.html"><button><i class="fa-solid fa-house"></i>Strona główna</button></a>
+        </div>
+    </div>
+    <div class="affiliation-section">
+        <div class="back-button-container " id="back-button-container" style="display: none;">
+            <div class="back-button" id="back-button" style="display: none;">
+                <h4> Wróć <i class="fa-solid fa-arrow-right-to-bracket"></i> </h4>
+            </div>
+            <div class="back-button" id="back-button-second" style="display: none;">
+                <h4> Wybór produktu <i class="fa-solid fa-arrow-right-to-bracket"></i> </h4>
+            </div>
+        </div>
+        <div class="information-section " id="information-section" style="display: none;">
+            <section class="cennik-information">
+                <div class="cennik-headline">
+                    <img src="./img/Other/JustPromote.it Logo-min.png" alt="">
+                    <h1>Twój sukces <br> zaczyna się Tutaj</h1>
+                    <p>~ Stawki są takie same dla kazdego promowanego produktu</p>
+                </div>
+
+                <div class="cennik-container">
+                    <div class="cennik cennik-basic">
+                        <h5>Basic</h5>
+                        <h2 class="pricetag">15,00<span>zł/ 1tys. like</span></h2>
+                        <hr>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Poniżej 1000 obserwacji</p>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Spełniać wymagania opisane w 'Konfiguracja Konta'</p>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Zarejestrowane konto do <a href="rejestracja.html">naszej bazy danych</a> </p>
+                            </li>
+                        </ul>
+                        <a href="#slider"> <button class="price-button purple button-11" data-price="15"
+                                data-color="#f371b5" data-package="Basic">Zobacz
+                                licznik</button></a>
+                    </div>
+                    <div class="cennik cennik-premium">
+                        <h5>Premium</h5>
+                        <h2 class="pricetag">20,00<span>zł/ 1tys like</span>
+                        </h2>
+                        <hr>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Wymagania Basic</p>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Powyżej 1000 obserwacji na koncie</p>
+                            </li>
+
+
+                        </ul>
+                        <a href="#slider"> <button class="price-button orange button-11" data-price="20"
+                                data-color="#8b5cf6" data-package="Premium">Zobacz
+                                licznik</button></a>
+                    </div>
+                    <div class="cennik cennik-ultimate">
+                        <h5>Ultimate</h5>
+                        <h2 class="pricetag">27,00<span>zł/ 1tys. like</span></h2>
+                        <hr>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Wymagania Premium</p>
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i>
+                                <p>Powyżej 5000 obserwacji na koncie</p>
+                            </li>
+
+                        </ul>
+                        <a href="#slider"> <button class="price-button purple button-11" data-price="27"
+                                data-color="#fb923c" data-package="Ultimate">Zobacz
+                                licznik</button></a>
+                    </div>
+                </div>
+                <div class="slider-container" id="slider">
+
+                    <input type="range" min="0" max="100" value="0" class="slider" id="rangeSlider">
+                    <div>
+                        <h3> Kwalfikująć się do pakietu <span id="Pakiet"></span>, za <span id="sliderValue">0</span>
+                            tys.
+                            lajków otrzymasz:</h3>
+
+
+
+                        <h2 id="totalCost">0 zł</h2>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+
+
+        </div>
+        <div class="promotion-section" id="promotion-section" style="display: none;">
+            <div class="headline-promotion">
+                <h1>Gotowe do użycia TikToki </h1>
+            </div>
+            <div class="navigation-promotion">
+                <a href="" class="active-a" data-filter="TitanMethod">
+                    <p>Titan Method 🔱</p><span></span>
+                </a>
+                <a href="" data-filter="DreamMastery">
+                    <p>DreamMastery ☁️</p><span></span>
+                </a>
+                <a href="" data-filter="DigitalRealm">
+                    <p>Digital Realm 🌐</p><span></span>
+                </a>
+                <a href="" data-filter="VikingCore">
+                    <p>Viking Core ⚔️</p><span></span>
+                </a>
+
+                <a href="" data-filter="CharmMastery">
+                    <p>Charm Mastery 🎩</p><span></span>
+                </a>
+
+
+
+            </div>
+            <div class="container-promotion" id="container-promotion">
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/01-Tiktok/01.png" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/01-Tiktok/02.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/01-Tiktok/03.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/01-Tiktok/04.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/01-Tiktok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/19iIQ40Q3pAOeSw5fkzeoE7hAInTTX8_h?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/02.PNG" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/03.PNG" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/04.PNG" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/05.PNG" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/06.PNG" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/07.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/08.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/02-Tiktok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1ENNw5Zxm4pH8H9ogtN1Y4xB5IXaFH-R-?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/03-TikTok/Tiktok1-1.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/03-TikTok/Tiktok1-2.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/03-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1wY4uLAyXqtGvAeTkopg-yXmDKwZkD31b?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/04-TikTok/01.png" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/04-TikTok/02.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/04-TikTok/03.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/04-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/10hKtpBsUaRKNmLSd_Xs-07Wb51x-dPD3?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/05-TikTok/01.png" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/05-TikTok/02.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/05-TikTok/03.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/05-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/16OQkc1z5drnW3EBsP_YSEXcd6UyBsGPX?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/02.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/03.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/04.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/05.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/06.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/06-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/18cr5OBjaqeO6xqtO2TyK6QHIUGKdVyhl?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/07-TikTok/tiktokmain1.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/07-TikTok/tiktokmain2.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/07-TikTok/tiktokmain3.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/07-TikTok/tiktokmain4.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/07-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1Ui8cjMcDJItLZYUGLYAZkIKh-lc143zr?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/08-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/08-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/08-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1ZTwdT91zRpU-xydYA1RUWYi5x9Scvja0?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/09-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/09-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/09-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1KTdrS0dMqpoc0uIZEnhTORAgwZKA-5sQ?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/10-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/10-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/10-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/136ki7X9_1KELDi7I9HgY6_uf68mTBz2Q?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/11-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/11-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/11-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1r8iud0IkbDI9JB4N2DbWhCCr5s-Bn0Uc?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/12-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/12-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/12-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1dXH7RFaMap4l7ZEqaVg-thDorP4SRGAR?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/13-TikTok/01.jpg" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/13-TikTok/02.jpg" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/13-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1iXmyHMbGtwQBraIbShuEd8vxIfVJ_8DK?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card TitanMethod">
+                    <div class="image-thumb">
+                        <img src="./img/MateriałyPromocyjne/14-TikTok/01.png" alt="" class="active">
+                        <img src="./img/MateriałyPromocyjne/14-TikTok/02.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/14-TikTok/03.png" alt="" class="inactive">
+                        <img src="./img/MateriałyPromocyjne/14-TikTok/EndCta.jpg" alt="" class="inactive">
+                        <div class="buttons-switch">
+                            <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-thumb">
+                        <div class="button-wraper">
+                            <a href="https://drive.google.com/drive/folders/1WYcSFkN-k_s-JHgUD5EVMofzOJVtTFvK?usp=share_link"
+                                target="_blank"> <button class="button">
+                                    <div class="text-button">
+                                        <span>Pobierz</span>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="account-section" id="account-section" style="display: none;">
+
+            <div class="zasoby-section">
+                <div class="zasoby-headline">
+                    <h2 id="zasoby-headline-text">Wybierz promowany produkt</h2>
+
+
+                </div>
+                <div class="zasoby-choice-container" id="zasoby-choice-container">
+                    <div class="zasoby-choice" id="zasoby-choice">
+                        <div class="choice" id="choiceTitan">
+                            <div class="product-content">
+
+                                <div class="title"><img src="./img/LogoProducts/Titan Method-01-min.jpg" alt="">
+                                    <div class="product-title">
+                                        <h4>TitanMethod</h4>
+                                        <p>titanmethod.pl</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="choice choice-disabled " id="choiceLucid">
+                            <div class="soon">
+                                <div class="content-soon">
+                                    <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                                </div>
+                            </div>
+                            <div class="product-content">
+
+                                <div class="title"><img src="./img/LogoProducts/Lucid Dream-3.png" alt="">
+                                    <div class="product-title">
+                                        <h4>DreamMastery</h4>
+                                        <p>DreamMastery.pl</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="choice choice-disabled" id="choiceDigital">
+                            <div class="soon">
+                                <div class="content-soon">
+                                    <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                                </div>
+                            </div>
+                            <div class="product-content">
+
+                                <div class="title"><img src="./img/LogoProducts/CharmMastery02-min.png" alt="">
+                                    <div class="product-title">
+                                        <h4>CharmMastery</h4>
+                                        <p>CharmMastery.pl</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="choice choice-disabled" id="choiceViking">
+                            <div class="soon">
+                                <div class="content-soon">
+                                    <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                                </div>
+                            </div>
+                            <div class="product-content">
+
+                                <div class="title"><img src="./img/LogoProducts/VikingEmpire02-min.png" alt="">
+                                    <div class="product-title">
+                                        <h4>VikingEmpire</h4>
+                                        <p>VikingEmpire.pl</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="choice choice-disabled" id="choiceCharm">
+                            <div class="soon">
+                                <div class="content-soon">
+                                    <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                                </div>
+                            </div>
+                            <div class="product-content">
+
+                                <div class="title"><img src="./img/LogoProducts/DigitalRealm1-min.png" alt="">
+                                    <div class="product-title">
+                                        <h4>DigitalRealm</h4>
+                                        <p>DigitalRealm.pl</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="zasoby-container" id="zasoby-container" style="display: none;">
+                    <div class="zasob" id="zasob-1">
+                        <div class="zasob-info">
+                            <span>01</span>
+                            <h4>Zdjęcie profilowe</h4>
+                        </div>
+                        <img src="/" alt="" id="image-zasoby">
+                        <a href=""
+                            target="_blank" id="href-zasoby"><button class="button-account">
+                                <p>Pobierz</p> <i class="fa-solid fa-download"></i>
+                            </button></a>
+                    </div>
+                    <div class="zasob" id="zasob-2">
+                        <div class="zasob-info">
+                            <span>02</span>
+                            <h4>Opis BIO < 1000 Obserwacji</h4>
+                        </div>
+
+                        <img src="/" alt="" id="text-5">
+                        <div>
+                            <button id="copy-5">Skopiuj Opis <i class="fa-solid fa-clipboard"></i></button>
+                            <a href="" id="href-zasoby-acc-2" target="_blank"> <button>Konto do oznaczenia <i
+                                        class="fa-solid fa-user"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="zasob" id="zasob">
+                        <div class="zasob-info">
+                            <span>03</span>
+                            <h4>Opis BIO > 1000 Obserwacji</h4>
+                        </div>
+
+                        <img src="./img/BioImage/titanBio2.jpeg" alt="" id="text-5">
+                        <div>
+                            <button id="copy-6">Skopiuj Opis <i class="fa-solid fa-clipboard"></i></button>
+
+                        </div>
+                    </div>
+
+                    <div class="zasob" id="zasob-3">
+                        <div class="zasob-info">
+                            <span>04</span>
+                            <h4>Prawidłowe Konto</h4>
+                        </div>
+                        <p>
+                            Tak wygląda prawidłowo zkonfigurowane konto gotowe do zmonetyzyowania, jeśli masz tak
+                            zkonfigutowane konto mozesz zacząć promować uzywając naszych materiałów promocyjnych
+                        </p>
+                        <a href="/" target="_blank" id="href-zasoby-acc"><button class="button-account">Zobacz
+                                poradnik <i class="fa-solid fa-chalkboard-user"></i></button></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container-panel" id="HelpSection">
+            <h2>Wybierz sekcję.</h2>
+            <div class="helps">
+
+                <div class="account help" id="account">
+                    <div class="information-pop">Wazne!</div><img src="/img/PanelImage/KonfiguracjaPanel-min.png"
+                        alt="">
+                    <h5>konfiguracja konta</h5>
+                </div>
+                <div class="promotion help" id="promotion">
+                    <div class="information-pop">Wazne!</div><img src="./img/PanelImage/PromocjaPanel-min.png" alt="">
+                    <h5>Promocja</h5>
+                </div>
+                <div class="information help " id="information"><img src="./img/PanelImage/CennikPanel-min.png" alt="">
+                    <h5>Cennik</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/scriptPanel.js"></script>
+
+</body>
+
+</html>

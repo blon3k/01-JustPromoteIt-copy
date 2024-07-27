@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JustPromote.It | Rejestracja konta.</title>
+    <link rel="icon" type="image/x-icon" href="./img/JustPromote.it Logo.png">
+    <link rel="stylesheet" href="./css/main.css?ver=1.6">
+    <script src="https://kit.fontawesome.com/f0e4f0170e.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16574691903"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16574691903');
+    </script>
+</head>
+
+<body>
+    <div class="preloader-screen" id="preloader-screen">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <canvas id="confetti" style="display: none; position: absolute;"></canvas>
+    <div id="nav" class="nav-panel">
+        <div class="nav-logo-panel"><a href="index.html"><img src="./img/Other/JustPromote.it Logo-min.png" alt=""></a>
+        </div>
+        <div class="nav-back-button">
+            <a href="index.html"><button><i class="fa-solid fa-house"></i>Strona główna</button></a>
+        </div>
+    </div>
+    <div class="notification" id="notification" style="display: none;">
+        <img src="./img/Other/Checkmark-min.png" alt="">
+        <h2>Wszystko Gotowe!</h2>
+        <a href="panelafiliacyjny.html"><button>Panel Zasobów</button></a>
+    </div>
+    <div class="question">
+        <div>
+            <h2 id="headline">Wybierz jaki produkt chcesz <span>promować</span>.</h2>
+            <p class="p-headline" id="p-headline">Wybierz jeden, poźniej mozesz wrócic i wybrać kolejny.</p>
+        </div>
+        <div class="products" id="products">
+            <div class="product product-main" id="product1">
+                <div class="product-content">
+                    <div class="information">
+                        <h6>Najpopularniejszy!</h6>
+                    </div>
+                    <div class="title"><img src="./img/LogoProducts/Titan Method-01-min.jpg" alt="">
+                        <div class="product-title">
+                            <h4>TitanMethod</h4>
+                            <p>titanmethod.pl</p>
+                        </div>
+                    </div>
+                    <p>Titan Method | E-book posiadjacy rozpisane ćwiczenia oraz dietę skupione na pobudzeniu hormonu
+                        wzrsotu. Produkt mozna łatwo promować ze względu na skale problemu jakim jest kompleks wrzostu.
+                    </p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="product product-soon" id="product4">
+                <div class="soon">
+                    <div class="content-soon">
+                        <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="title">
+                        <img src="./img/LogoProducts/Lucid Dream-3.png" alt="">
+                        <div class="product-title">
+                            <h4>DreamMastery</h4>
+                            <p>dreammastery.store</p>
+                        </div>
+                    </div>
+                    <p>
+                        Ebook „DreamMastery” uczy technik świadomego śnienia i poprawy jakości snu. Skuteczna promocja
+                        dzięki
+                        targetowaniu fanów medytacji i rozwoju osobistego. Wzrastający popyt na takie treści.</p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="product product-soon" id="product2">
+                <div class="soon">
+                    <div class="content-soon">
+                        <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="title"><img src="./img/LogoProducts/DigitalRealm1-min.png" alt="">
+                        <div class="product-title">
+                            <h4>DigitalRealm</h4>
+                            <p>digitalrealm.pl</p>
+                        </div>
+                    </div>
+                    <p>"DigitalRealm" to kompleksowy ebook, który odkrywa tajniki zarabiania w internecie poprzez
+                        sprzedaż produktów cyfrowych. Ten przewodnik jest idealny dla każdego, kto pragnie wkroczyć w
+                        świat e-commerce i osiągnąć finansową niezależność.</p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="product product-soon" id="product3">
+                <div class="soon">
+                    <div class="content-soon">
+                        <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="title"><img src="./img/LogoProducts/VikingEmpire02-min.png" alt="">
+                        <div class="product-title">
+                            <h4>VikingCore</h4>
+                            <p>vikingcore.pl</p>
+                        </div>
+                    </div>
+                    <p>VikingCore kompleksowy przewodnik po ćwiczeniach, diecie i zdrowym stylu życia, mający na celu
+                        maksymalizację możliwości fizycznych. Skuteczność promocji ebooka zależy od strategicznego
+                        marketingu w mediach społecznościowych. Popyt na tego
+                        rodzaju treści jest wysoki, zwłaszcza wśród osób dążących do poprawy zdrowia i wyglądu
+                        fizycznego.</p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="product product-soon" id="product5">
+                <div class="soon">
+                    <div class="content-soon">
+                        <h4>Wkrótce <i class="fa-solid fa-lock"></i></h4>
+                    </div>
+                </div>
+                <div class="product-content">
+
+                    <div class="title"><img src="./img/LogoProducts/CharmMastery02-min.png" alt="">
+                        <div class="product-title">
+                            <h4>CharmMastery</h4>
+                            <p>charmmastery.pl</p>
+                        </div>
+                    </div>
+                    <p>
+                        Ebook oferuje porady na temat manipulacji i poprawy relacji międzyludzkich. Promocja jest
+                        skuteczna
+                        dzięki targetowaniu zainteresowanych psychologią i komunikacją. Popyt na takie treści jest
+                        wysoki.</p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="platforms" style="display: none;" id="platforms">
+            <div class="platform" id="platform1">
+                <div class="checkbox" id="checkbox1"></div>
+                <img src="./img/SocialMediaLogo/TikTok-min.png" alt="">
+                <h6>TikTok</h6>
+            </div>
+
+            <div class="platform disabled-platform" id="platform3">
+                <div class="checkbox" id="checkbox3"></div>
+                <div class="soon-content">
+                    <div class="soon">
+                        <span>Wkrótce <i class="fa-solid fa-lock"></i></span>
+                    </div>
+                </div>
+                <img src="./img/SocialMediaLogo/Instagram.svg.webp" alt="">
+                <h6>Instagram</h6>
+            </div>
+            <div class="platform disabled-platform" id="platform4">
+                <div class="checkbox" id="checkbox4"></div>
+                <div class="soon-content">
+                    <div class="soon">
+                        <span>Wkrótce <i class="fa-solid fa-lock"></i></span>
+                    </div>
+                </div>
+                <img src="./img/SocialMediaLogo/YtShorts.svg.png" alt="">
+                <h6>YT Shorts</h6>
+            </div>
+            <div class="platform disabled-platform" id="platform5" aria-disabled="true">
+                <div class="soon-content">
+                    <div class="soon">
+                        <span>Wkrótce <i class="fa-solid fa-lock"></i></span>
+                    </div>
+                </div>
+                <img src="./img/SocialMediaLogo/Twitter.avif" alt="">
+                <h6>X / Twitter</h6>
+            </div>
+
+        </div>
+
+        <button id="btn-dalej" style="display: none; " disabled>
+            <span>Dalej</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    <div id="page" class="site" style="display: none;">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="">just<span>promote</span>.it</a></div>
+                    <ul class="progress-steps">
+                        <li class="step active">
+                            <span>1</span>
+                            <div class="step-para">
+                                <p>Tworzenie konta</p>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <div class="step-para">
+                                <p>Dodanie konta </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form id="registration-form">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <img class="logo-form" src="./img/Other/JustPromote.it Logo-min.png" alt="">
+                        <h2>Tworzenie konta</h2>
+                        <p>Pierwszym krokiem promocji będzie stworzenie konta.</p>
+                        <div class="text">
+                            <p id="page-p1">W pierwszym kroku, pobierz aplikacje do promowania które wybrałeś
+                                (Tiktok/Instagram/YT Shorts) na swoje urządzenie mobilne.
+                                Następnie, przystąp do tworzenia konta. <br><br>
+                                Tworzenie konta wymaga starannego wyboru nazwy, która odnosi się do promowanego
+                                produktu. W przypadku tego produktu, którym jest TitanMethod, sugerowane nazwy konta
+                                mogą być takie jak TitanMethod01, TitanMethod_1, czy też inne wariacje. Jest to istotne,
+                                aby nazwa konta była spójna z promowanym produktem. <br><br>
+                                Ustawienie zdjęcia profilowego oraz sekcji BIO zostanie wykonane w późniejszym etapie,
+                                po uzyskaniu dostępu do odpowiednich zasobów.</p>
+                            <p id="page-p2">W pierwszym kroku, pobierz aplikacje do promowania które wybrałeś
+                                (Tiktok/Instagram/YT Shorts) na swoje urządzenie mobilne.
+                                Następnie, przystąp do tworzenia konta. <br><br>
+                                Tworzenie konta wymaga starannego wyboru nazwy, która odnosi się do promowanego
+                                produktu. W przypadku tego produktu, którym jest DigitalRealm, sugerowane nazwy konta
+                                mogą być takie jak DigitalRealm01, DigitalRealm_1, czy też inne wariacje. Jest to
+                                istotne, aby nazwa konta była spójna z promowanym produktem. <br><br>
+                                Ustawienie zdjęcia profilowego oraz sekcji BIO zostanie wykonane w późniejszym etapie,
+                                po uzyskaniu dostępu do odpowiednich zasobów.</p>
+                            <p id="page-p3">W pierwszym kroku, pobierz aplikacje do promowania które wybrałeś
+                                (Tiktok/Instagram/YT Shorts) na swoje urządzenie mobilne.
+                                Następnie, przystąp do tworzenia konta. <br><br>
+                                Tworzenie konta wymaga starannego wyboru nazwy, która odnosi się do promowanego
+                                produktu. W przypadku tego produktu, którym jest VikingCore, sugerowane nazwy konta mogą
+                                być takie jak VikingCore01, VikingCore_1, czy też inne wariacje. Jest to istotne, aby
+                                nazwa konta była spójna z promowanym produktem. <br><br>
+                                Ustawienie zdjęcia profilowego oraz sekcji BIO zostanie wykonane w późniejszym etapie,
+                                po uzyskaniu dostępu do odpowiednich zasobów.</p>
+                            <p id="page-p4">W pierwszym kroku, pobierz aplikacje do promowania które wybrałeś
+                                (Tiktok/Instagram/YT Shorts) na swoje urządzenie mobilne.
+                                Następnie, przystąp do tworzenia konta. <br><br>
+                                Tworzenie konta wymaga starannego wyboru nazwy, która odnosi się do promowanego
+                                produktu. W przypadku tego produktu, którym jest DreamMastery, sugerowane nazwy konta
+                                mogą
+                                być takie jak DreamMastery01, DreamMastery_1, czy też inne wariacje. Jest to istotne,
+                                aby
+                                nazwa konta była spójna z promowanym produktem. <br><br>
+                                Ustawienie zdjęcia profilowego oraz sekcji BIO zostanie wykonane w późniejszym etapie,
+                                po uzyskaniu dostępu do odpowiednich zasobów.</p>
+                            <p id="page-p5">W pierwszym kroku, pobierz aplikacje do promowania które wybrałeś
+                                (Tiktok/Instagram/YT Shorts) na swoje urządzenie mobilne.
+                                Następnie, przystąp do tworzenia konta. <br><br>
+                                Tworzenie konta wymaga starannego wyboru nazwy, która odnosi się do promowanego
+                                produktu. W przypadku tego produktu, którym jest CharmMastery, sugerowane nazwy konta
+                                mogą
+                                być takie jak CharmMastery01, VikingCore_1, czy też inne wariacje. Jest to istotne, aby
+                                nazwa konta była spójna z promowanym produktem. <br><br>
+                                Ustawienie zdjęcia profilowego oraz sekcji BIO zostanie wykonane w późniejszym etapie,
+                                po uzyskaniu dostępu do odpowiednich zasobów.</p>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <img class="logo-form" src="./img/Other/JustPromote.it Logo-min.png" alt="">
+                        <h2>Współpraca</h2>
+                        <div class="text">
+                            <p>Teraz poprosimy Cię o niezbędne dane abyśmy mogli śledzić twój postęp i wypłacać Ci
+                                zarobione środki.</p>
+                        </div>
+
+                        <div id="dynamic-inputs"></div>
+                        <div class="user">
+                            <label for="EmailContact">Twój e-mail kontaktowy</label><input type="text"
+                                placeholder="twójemail@mail.com" name="data[EmailContact]" required id="email-contact">
+                        </div>
+                        <div class="user user-payment">
+                            <label for="PaymentMethod">Wybierz formę płatności wypłacania pieniędzy.</label>
+                            <select name="data[PaymentMethod]" id="select-payment" required>
+                                <option value="Forma Płatności">Wybierz opjce</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Przelew na konto bankowe">Przelew na konto bankowe</option>
+                                <option value="PaySafeCard">PaySafeCard (80%)</option>
+                                <option value="Przelew na telefon">Przelew na telefon</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disabled>Cofnij</button>
+                        <button type="button" class="btn-next">Gotowe!</button>
+                        <button type="submit" class="btn-submit" id="btn-submit" disabled>Kontynuuj dalej</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/scriptRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="./js/firbase.js"></script>
+</body>
+
+</html>
