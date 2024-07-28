@@ -1,9 +1,11 @@
-require('dotenv').config()
-const express = require('express')
-const app = express()
-const path = require('path')
+require('dotenv').config();
+const express = require('express');
+const app = express();
+const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'public')))
+const port = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/config', (req, res) => {
 	const config = {
@@ -15,12 +17,10 @@ app.get('/config', (req, res) => {
 		messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
 		appId: process.env.FIREBASE_APP_ID,
 		measurementId: process.env.FIREBASE_MEASUREMENT_ID,
-	}
-	res.json(config) 
-})
+	};
+	res.json(config);
+});
 
-app.listen(3000, () => {
-	console.log('Server running on http://localhost:3000')
-})
-
-
+app.listen(port, () => {
+	console.log(`Server running on port ${port}`);
+});
